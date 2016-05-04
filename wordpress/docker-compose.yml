@@ -1,0 +1,9 @@
+version: '2'
+services:
+    mariadb:
+        image: mariadb
+        environment:
+           MYSQL_DATABASE: wordpress
+           MYSQL_ROOT_PASSWORD: password
+# docker run --name mariadb -e MYSQL_ROOT_PASSWORD=0858324 -e MYSQL_DATABASE=wordpress -d mariadb
+# docker run --name wpdocker --link mariadb:mysql -p 80:80 -d wordpress
