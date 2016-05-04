@@ -7,6 +7,9 @@ Run:
 # `mkdir db_data && mkdir wordpress` # to hold the db data and wordpress's source code
 # `docker-compose up`
 
+(`docker-compose up -d` # run in detach mode
+`docker-compose logs` # to see the log)
+
 Reference:
 Google: docker wordpress volume storage -> https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
 
