@@ -8,6 +8,8 @@ wordpress_db:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: examplepass
+  volumes:
+    - ./db_data:/var/lib/mysql
 phpmyadmin:
   image: corbinu/docker-phpmyadmin
   links:
