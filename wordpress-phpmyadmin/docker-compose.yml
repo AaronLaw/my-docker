@@ -1,2 +1,6 @@
 wordpress:
   image: wordpress
+  links:
+    - wordpress_db:mysql
+wordpress_db:
+  image: mariadb
