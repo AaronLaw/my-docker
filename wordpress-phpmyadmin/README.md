@@ -3,6 +3,8 @@
 Docker filesystems are temporary by default.
 So we need a volume to presistent data.
 
+Here, we run containers of Wordpress, Mariadb, Phpmyadmin and further Osticket. (Read their doc on hub.docker.com to see what `environment:` their need.)
+
 Run:
 # `mkdir db_data && mkdir wordpress` # to hold the db data and wordpress's source code
 # `docker-compose up`
