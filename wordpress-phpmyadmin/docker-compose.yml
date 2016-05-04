@@ -4,3 +4,5 @@ wordpress:
     - wordpress_db:mysql
 wordpress_db:
   image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: examplepass
