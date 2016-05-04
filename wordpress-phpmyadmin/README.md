@@ -13,7 +13,9 @@ Run:
 `docker-compose logs` # to see the log)
 
 Reference:
-Google: docker wordpress volume storage -> https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
+* https://docs.docker.com/engine/userguide/containers/dockervolumes/
+* Google: docker wordpress volume storage -> https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
+* https://hub.docker.com/_/wordpress/
 
 --
 
