@@ -9,12 +9,12 @@ Installation of them should refer to the offical site of docker: https://docs.do
 
 ## History
 2016-04-28: 
-focus on running Wordpress & Mariadb by docker-compose, rather than running them by issue 2 commands.
+focus on running Wordpress & Mariadb by docker-compose, rather than running them by issue 2 docker commands.
 
-Workon: "wordpress" by compose
+Workon: "./wordpress/" by docker-compose
 
 
 2016-04-30:
-focus on presistent data by volume container, & link a local volume (local folder).
+focus on persistent data by volume container, & link a local volume (local folder).
 
-Workon: "./wordpress-phpmyadmin" by docker-compose
+Workon: "./wordpress-phpmyadmin/" by docker-compose
