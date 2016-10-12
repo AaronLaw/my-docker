@@ -1,3 +1,5 @@
+2016-04-25:
+
 1.
 I write a docker-compose.yml file base on these 2 commands:
 # docker run --name mariadb -e MYSQL_ROOT_PASSWORD=0858324 -e MYSQL_DATABASE=wordpress -d mariadb
