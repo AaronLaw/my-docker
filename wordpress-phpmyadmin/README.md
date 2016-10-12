@@ -18,7 +18,7 @@ Reference:
 * https://hub.docker.com/_/wordpress/
 
 --
-
+2016-04-28:
 Docker filesystems are temporary by default. #  (https://www.digitalocean.com/community/tutorials/how-to-work-with-docker-data-volumes-on-ubuntu-14-04)
 The data in db is not persistent after `docker rm wordpressdb`.
 So, we need a volume, which can be a volume or a volume container, to persistent data (data will not be lost after stopping the db container)
@@ -33,3 +33,7 @@ Google: docker wordpress volume storage -> https://www.digitalocean.com/communit
 `docker run --name wpdocker --link wordpressdb_vol:mysql -p 80:80 -d wordpress:latest`
 
 After stop & rm both the wordpressdb_vol and wpdocker, and re-run them again, I can see the db data is kept in the pwd.
+--
+2016-07-17:
+Stackoverflow.com: docker -> How to deal with persistent storage (e.g. databases) in docker (http://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker/) - questions about how to deal with persistent storage: by docker volume container, or by folder on local hdd, and which one is better?
+--
