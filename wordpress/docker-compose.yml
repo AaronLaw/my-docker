@@ -5,7 +5,8 @@ services:
         links:
           - mariadb
         environment:
-          WORDPRESS_DB_HOST: "127.0.0.1:3306"
+          WORDPRESS_DB_HOST: 127.0.0.1:3306
+          WORDPRESS_DB_USER: root
           WORDPRESS_DB_PASSWORD: password
         ports:
           - 8084:80
