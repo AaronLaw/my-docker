@@ -18,3 +18,9 @@ Workon: "./wordpress/" by docker-compose
 focus on persistent data by volume container, & link a local volume (local folder).
 
 Workon: "./wordpress-phpmyadmin/" by docker-compose
+
+2016-10-13:
+focus on updating the code of 2016-04-028 that running Wordpress & Mariadb by docker-compose, rather than running them by issue 2 docker commands.
+update the code to docker-compose v1.8.1, as the code already written cannot be run.
+
+Workon: "./wordpress/" by docker-compose
