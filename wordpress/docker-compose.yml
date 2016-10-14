@@ -1,19 +1,41 @@
+# 2016-10-13: update the code as the previous code cannot be run correctly with docker-compose v1.8.1
+# new code is based on https://hub.docker.com/_/wordpress/
 version: '2'
+
 services:
-    web:
-        image: wordpress
-        links:
-          - mariadb
-        environment:
-          WORDPRESS_DB_HOST: 127.0.0.1:3306
-          WORDPRESS_DB_USER: root
-          WORDPRESS_DB_PASSWORD: password
-        ports:
-          - 8084:80
-    mariadb:
-        image: mariadb
-        environment:
-           MYSQL_DATABASE: wordpress
-           MYSQL_ROOT_PASSWORD: password
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
 # docker run --name mariadb -e MYSQL_ROOT_PASSWORD=0858324 -e MYSQL_DATABASE=wordpress -d mariadb
 # docker run --name wpdocker --link mariadb:mysql -p 80:80 -d wordpress
+
+#----
+# 2016-10-13: that code of 2016-04-25 cannot be run on docker-compose v1.8.1 now
+#version: '2'
+#services:
+#    web:
+#        image: wordpress
+#        links:
+#         - mariadb
+#        environment:
+#          WORDPRESS_DB_HOST: 127.0.0.1:3306
+#          WORDPRESS_DB_USER: root
+#          WORDPRESS_DB_PASSWORD: password
+#        ports:
+#          - 8084:80
+#    mariadb:
+#        image: mariadb
+#        environment:
+#           MYSQL_DATABASE: wordpress
+#           MYSQL_ROOT_PASSWORD: password
+## docker run --name mariadb -e MYSQL_ROOT_PASSWORD=0858324 -e MYSQL_DATABASE=wordpress -d mariadb
+## docker run --name wpdocker --link mariadb:mysql -p 80:80 -d wordpress
