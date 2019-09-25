@@ -64,3 +64,20 @@ Workon: **"./wordpress/"** by docker-compose.
 After learning a lots, I focus on running MySQL + PhpMyAdmin in a rapid way by using docker (instead of using LAMP stack) to support WordPress development.
 
 Workon: **"./WordPress_for_holistic_guidance"** by docker-compose.
+
+
+2019-09-25: 
+Update docker-compose file to v3: This file will setup MySQL & PHPMyAdmin with a single command. Add the code below to a file called "docker-compose.yaml" and run the command
+This is the original code from https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42 (excepts I have changed the ports).
+
+```
+$ docker-compose up -d
+
+# To Tear Down
+$ docker-compose down --volumes
+```
+Reference:
+Google: docker phpmyadmin -> [Run MySQL & phpMyAdmin locally in 3 steps using Docker](https://medium.com/@migueldoctor/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc)
+Google: docker compose phpmyadmin -> [Docker Compose FIle For Wordpress, MySQL & phpmyadmin](https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42)
+
+Workon: **"./wordpress-phpmyadmin"** by docker-compose.
