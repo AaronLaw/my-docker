@@ -81,3 +81,6 @@ Google: docker phpmyadmin -> [Run MySQL & phpMyAdmin locally in 3 steps using Do
 Google: docker compose phpmyadmin -> [Docker Compose FIle For Wordpress, MySQL & phpmyadmin](https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42)
 
 Workon: **"./wordpress-phpmyadmin"** by docker-compose.
+
+2019-09-25:
+Debug: As this is a pool of experiment. I will create git branch when creating each new folder from now on.
