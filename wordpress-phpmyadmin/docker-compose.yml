@@ -25,6 +25,17 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: wordpress
+  phpmyadmin:
+    depends_on:
+      - wordpress
+    image: corbinu/docker-phpmyadmin
+    links:
+      - db
+    ports:
+      - "8081:80"
+    environment:
+      MYSQL_USERNAME: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress
 
 
 ## 2016-10-13: The following code is copied from "https://docs.docker.com/compose/wordpress/", as it correctly run
