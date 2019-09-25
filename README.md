@@ -49,4 +49,10 @@ Workon: **"./wordpress-phpmyadmin/" **by docker-compose
 focus on updating the code of 2016-04-28 that running Wordpress & MariaDB by docker-compose, rather than running them by issue 2 docker commands.
 update the code to docker-compose v1.8.1, as the code already written cannot be run.
 
-Workon: **"./wordpress/"** by docker-compose
+Workon: **"./wordpress/"** by docker-compose.
+
+
+2019-03-26:
+After learning a lots, I focus on running MySQL + PhpMyAdmin in a rapid way by using docker (instead of using LAMP stack) to support WordPress development.
+
+Workon: **"./WordPress_for_holistic_guidance"** by docker-compose.
