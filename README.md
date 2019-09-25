@@ -1,3 +1,5 @@
+# Study and Research on container technology
+
 ## Installation
 To run Docker container, we need to install docker-engine.
 To run containers in a composition set, we need to install docker-compose.
@@ -44,6 +46,12 @@ Workon: **"./wordpress/"** by docker-compose
 focus on persistent data by volume container, & link a local volume (local folder).
 
 Workon: **"./wordpress-phpmyadmin/" **by docker-compose
+
+
+2016-05-06:
+focus on persistent data by volume container.
+
+Workon: **"./wp-vol/" **by docker-compose
 
 2016-10-13:
 focus on updating the code of 2016-04-28 that running Wordpress & MariaDB by docker-compose, rather than running them by issue 2 docker commands.
