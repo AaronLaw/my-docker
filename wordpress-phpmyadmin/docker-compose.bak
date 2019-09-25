@@ -31,4 +31,3 @@ osticket:
     MYSQL_USER: root
     MYSQL_PASSWORD: examplepass
     MYSQL_DATABASE: osticket
-    

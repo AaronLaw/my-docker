@@ -37,3 +37,19 @@ After stop & rm both the wordpressdb_vol and wpdocker, and re-run them again, I 
 2016-07-17:
 Stackoverflow.com: docker -> How to deal with persistent storage (e.g. databases) in docker (http://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker/) - questions about how to deal with persistent storage: by docker volume container, or by folder on local hdd, and which one is better?
 --
+2019-09-25: 
+Update docker-compose file to v3: This file will setup MySQL & PHPMyAdmin with a single command. Add the code below to a file called "docker-compose.yaml" and run the command
+This is the original code from https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42 (excepts I have changed the ports).
+
+```
+$ docker-compose up -d
+
+# To Tear Down
+$ docker-compose down --volumes
+```
+
+Reference:
+Google: docker phpmyadmin -> [Run MySQL & phpMyAdmin locally in 3 steps using Docker](https://medium.com/@migueldoctor/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc)
+Google: docker compose phpmyadmin -> [Docker Compose FIle For Wordpress, MySQL & phpmyadmin](https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42)
+
+Workon: **"./wordpress-phpmyadmin"** by docker-compose.
